@@ -76,7 +76,7 @@ public class HttpRequest extends AsyncTask<String, Integer, String>
                 if(type==SearchType.CURRENTPRICE)
                     Log.e("AA", builder.toString());
                 return builder.toString();
-            }sdfasdfasdfdsf
+            }
             else
             {
                 Log.e("No Res", conn.getResponseMessage());
