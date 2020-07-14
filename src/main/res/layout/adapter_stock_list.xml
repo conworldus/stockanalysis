@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ticker"
+        android:padding="5dp"
+        android:text="@string/place_holder"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/company_name"
+        android:padding="5dp"
+        android:text="@string/place_holder"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/ticker"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

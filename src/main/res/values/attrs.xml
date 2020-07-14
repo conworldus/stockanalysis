@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="stockChartView">
+        <attr name="axisColor" format="color"/>
+        <attr name="plotColor" format="color"/>
+        <attr name="dotColor" format="color"/>
+        <attr name="distanceMeasureColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="TextPairView">
+        <attr name="labelText" format="string"/>
+        <attr name="contentText" format="string"/>
+        <attr name="labelSize" format="dimension"/>
+        <attr name="contentSize" format="dimension"/>
+        <attr name="android:orientation" format="enum">
+            <enum name="vertical" value="0"/>
+            <enum name="horizontal" value="0"/>
+        </attr>
+    </declare-styleable>
+</resources>

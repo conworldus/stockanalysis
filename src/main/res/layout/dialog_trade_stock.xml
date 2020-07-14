@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/trade_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="@string/number_of_shares"
+        android:autofillHints=""
+        android:layout_marginBottom="10dp"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/trade_type"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/buy"
+            android:id="@+id/radio_buy"/>
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/sell"
+            android:id="@+id/radio_sell"
+            android:layout_gravity="end"/>
+    </RadioGroup>
+    <com.visight.util.TextPairView
+        android:id="@+id/c_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:labelText="Current Price:"/>
+    <com.visight.util.TextPairView
+        android:id="@+id/c_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:labelText="Total Value:"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:id="@+id/trade_submit"
+        android:layout_gravity="end"
+        style="@style/Widget.AppCompat.Button.Borderless"/>
+</LinearLayout>
